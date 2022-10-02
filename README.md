@@ -1,1 +1,1 @@
-![example workflow](https://github.com/Andrew7567/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![Build Status](https://github.com/Andrew7567/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
