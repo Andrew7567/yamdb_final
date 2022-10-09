@@ -20,6 +20,7 @@ jobs:
         pip install -r api_yamdb/requirements.txt
     - name: Test with flake8 and django tests
       run: |
+        cd ..
         pwd
         python -m flake8
         pytest
