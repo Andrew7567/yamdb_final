@@ -57,7 +57,7 @@ services:
       - web
 
 volumes:
-  # Новые тома 
+  # Новые тома.
   static_value:
   media_value:
 
