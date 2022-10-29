@@ -7,7 +7,7 @@ services:
   # описание контейнера db
   db:
     # образ, из которого должен быть запущен контейнер
-    image: andrew7567/project:latest
+    image: postgres:13.0-alpine
     # volume и связанная с ним директория в контейнере
     volumes:
       - /var/lib/postgresql/data/
@@ -15,6 +15,7 @@ services:
     env_file:
       - ./.env
   web:
+    image: andrew7567/project:latest
     build: ../api_yamdb
     restart: always
     volumes:
