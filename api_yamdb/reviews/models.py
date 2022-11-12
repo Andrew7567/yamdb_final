@@ -162,7 +162,7 @@ class Comment(models.Model):
         related_name='comments',
     )
     pub_date = models.DateTimeField(
-        verbose_name='Дата публикации',
+        verbose_name='Дата публикации/',
         auto_now_add=True,
     )
 
