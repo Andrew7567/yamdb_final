@@ -11,7 +11,7 @@ SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
 
 AUTH_USER_MODEL = 'users.User'
 
-DEBUG = False
+DEBUG = True
 
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 
@@ -70,12 +70,13 @@ DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', default='django.db.backends.postgresql'),
         'NAME': os.getenv('DB_NAME', default='postgres'),
-        'USER': os.getenv('POSTGRES_USER'),
-        'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
+        'USER':  'postgres', #os.getenv('POSTGRES_USER'),
+        'PASSWORD': 'postgres', # os.getenv('POSTGRES_PASSWORD'),
+        'HOST': '158.160.17.21', #os.getenv('DB_HOST'),
         'PORT': os.getenv('DB_PORT')
     }
 }
+
 
 
 AUTH_PASSWORD_VALIDATORS = [
