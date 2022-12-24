@@ -18,13 +18,10 @@ jobs:
       run: echo "$SECR"
     - name: Install dependencies
       run: | 
-        echo "$secrets.SSH_KEY"
         python -m pip install --upgrade pip 
         pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
         pip install -r api_yamdb/requirements.txt
         pip install isort==5.5.0
-#        print (${{ secrets.USER }})
-#        print (${{ secrets.HOST }})
 
     - name: Test with flake8 and django tests
       run: |
